@@ -1,2 +1,16 @@
 @import './common';
+@import './utils/mixins';
+@import './utils/variables';
 
+@import './components/1header';
+@import './components/2hero';
+@import './components/3prodacts';
+@import './components/4about';
+@import './components/5advantages';
+@import './components/6gallery';
+@import './components/7testimonial';
+@import './components/8contacts';
+@import './components/9footer';
+@import './components/mobail-menu';
+@import './components/reset';
+@import './components/container';
