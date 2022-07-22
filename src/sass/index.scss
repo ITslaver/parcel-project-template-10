@@ -1,5 +1,5 @@
 @import './common';
-@import './utils/mixins';
+@import './utils/mixin';
 @import './utils/variables';
 
 @import './components/1header';
@@ -11,6 +11,6 @@
 @import './components/7testimonial';
 @import './components/8contacts';
 @import './components/9footer';
-@import './components/mobail-menu';
+@import './components/0-mobail-menu';
 @import './components/reset';
 @import './components/container';
