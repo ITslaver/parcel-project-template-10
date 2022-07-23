@@ -9,7 +9,7 @@ $secondaru-font: 'Titan One', cursive;
         padding-right: 74px;
     }
 
-    @media screen and (min-width: $descstop) {
+    @media screen and (min-width: $deskstop) {
 padding: 120px 116px 0 116px;
     }
 }
@@ -51,7 +51,7 @@ padding: 120px 116px 0 116px;
             line-height: 2.16em;
     }
 
-    @media screen and (min-width: $descstop) {
+    @media screen and (min-width: $deskstop) {
         font-size: 16px;
         line-height: 1.86em;
     }
