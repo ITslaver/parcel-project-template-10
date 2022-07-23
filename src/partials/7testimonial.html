@@ -1,23 +1,36 @@
-<section class="testimonials">
+<section class="slider testimonials">
 <div class="testimonials__slide">
-    <img src="./images/testimonials1-min.png" alt="Emily avatar" width="85px" height="85px">
+    <img class="testimonials__avatars" src="./images/testimonials1-min.png" alt="Emily avatar" width="85px" height="85px">
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p> </div>
     <div class="testimonials__author">Emily, Los Angeles</div>
 </div>
 <div class="testimonials__slide">
-    <div class="testimonials__avatars"><img src="./images/testimonials2-min.png" alt="Alexa avatar" width="85px" height="85px">
+    <img class="testimonials__avatars" src="./images/testimonials2-min.png" alt="Alexa avatar" width="85px" height="85px">
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p></div>
     <div class="testimonials__author">Alexa, Las Vegas</div>
 </div>
 <div class="testimonials__slide">
-    <img src="./images/testimonials3-min.png" alt="Jain avatar" width="85px" height="85px">
+    <img class="testimonials__avatars" src="./images/testimonials3-min.png" alt="Jain avatar" width="85px" height="85px">
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus.</p></div>
     <div class="testimonials__author">Jain, Chichago</div>
 </div>
 </section>
 
-  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
 
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $(".testimonials").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+   adaptiveHeight: true
+});
+    });
+  </script>
