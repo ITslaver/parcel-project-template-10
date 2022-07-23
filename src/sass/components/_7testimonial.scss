@@ -1,0 +1,60 @@
+.testimonials__avatars {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.testimonials__author {
+    text-align: center;
+}
+
+.testimonials__quote {
+    padding: 43px 50px 17px 50px;
+    background-color: #EAEAEA;
+    border: 1px solid;
+    text-align: center;
+}
+
+.testimonials__text::before {
+    content: "";
+    background-image: url(./images/quote.svg);
+    height: 54px;
+    width: 40px;
+}
+
+.testimonials__text {
+    padding: 0;
+    margin: 0;
+    background: repeating-linear-gradient(#FAFAFA 0px, #FAFAFA 30px, #E1E1E1 31px, #E1E1E1 32px);
+    display: block;
+    font-size: 12px;
+    line-height: 2.5em;
+}
+
+.testimonials__quote {
+    padding: 43px 50px 17px 50px;
+    border: 1px solid;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.testimonials__quote::after {
+    content: ". . .";
+    color: red;
+    font-weight: 900;
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    line-height: 1em;
+}
+
+.testimonials__author {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.76em;
+    font-weight: 500;
+    margin-top: 36px;
+    display: block;
+}
