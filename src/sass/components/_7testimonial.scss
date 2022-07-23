@@ -27,7 +27,7 @@ padding: 120px 116px 0 116px;
 }
 
 .testimonials__text::before {
-  content: '';
+  content:'';
   background-image: url(../images/quote.svg);
   height: 40px;
   width: 54px;
@@ -45,7 +45,6 @@ left: 6px;
 top: 32px;
     left: 72px;
     }
-
 }
 
 .testimonials__text {
