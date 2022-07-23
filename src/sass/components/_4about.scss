@@ -1,0 +1,95 @@
+.about {
+  padding-top: 60px;
+  background-color: $back_color;
+  background-image: url(../images/about_bg_mobile.png);
+  @include retina {
+    background-image: url(../images/about_bg_mobile_2x.png);
+  }
+
+  background-position: right 0 bottom 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about__subtitle {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 1.17;
+
+  color: $label_color;
+}
+
+.about__title {
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  color: $title_color;
+}
+
+.about__img {
+  max-width: 280px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 321px) {
+    max-width: 336px;
+  }
+
+  @include desktop {
+    max-width: 501px;
+  }
+}
+
+.about__text {
+  padding-right: 60px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+.about__text--first {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.about__text--second,
+.about__text--third {
+  margin-bottom: 20px;
+
+  color: $brown;
+}
+
+.about__btn {
+  min-width: 176px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 22px;
+  border: none;
+  background-color: #fff;
+}
+.about__btn-text {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $title_color;
+}
+.about__btn-icon {
+  width: 5px;
+  height: 8px;
+}
