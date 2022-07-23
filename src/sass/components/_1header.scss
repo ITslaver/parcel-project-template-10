@@ -1,0 +1,93 @@
+.header {
+    background-color: $pink;
+    border: 2px solid black;
+    //бордер временно сделала для себя, чтобы видеть границы блока
+}
+
+.header__menu-open {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.header__menu-icon {
+    stroke: $title-color;
+    
+    transition: stroke $time-duration $time-function;
+    
+    .header__menu-open:hover &,
+    .header__menu-open:focus & {
+        stroke: $white;
+    }
+}
+
+.header__menu-close {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.header__close-icon {
+    stroke: $white;
+
+    transition: stroke $time-duration $time-function;
+
+    .header__menu-close:hover &,
+    .header__menu-close:focus & {
+        stroke: $title-color;
+    }
+}
+
+.header__modal-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    width: 209px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    padding-left: 0;
+    padding-right: 0;
+
+    border: 0;
+    border-radius: 22px;
+
+    background-color: $white;
+    color: $title-color;
+
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    transition: background-color $time-duration $time-function;
+
+    &:hover, &:focus {
+        background-color: $gray;
+    }
+}
+
+.header__arrow-icon {
+    stroke: $title_color;
+    margin-left: 21px;
+}
+
+.header__nav-link {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $white;
+
+    transition: color $time-duration $time-function;
+    
+    &:hover, &:focus {
+            color: $title-color;
+        }
+}
+
+.header__nav-link--active {
+    color: $title-color;
+}
