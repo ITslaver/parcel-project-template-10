@@ -29,9 +29,19 @@ padding: 120px 116px 0 116px;
   width: 54px;
   display: block;
   position: absolute;
-  left: 6px;
-  top: 20px;
+  left: 50px;
+  top: 34px;
   z-index: -1;
+
+    @media screen and (min-width: $tablet) {
+left: 6px;
+    top: 20px;
+        }
+    @media screen and (min-width: $desktop) {
+top: 32px;
+    left: 72px;
+    }
+
 }
 
 .testimonials__text {
@@ -49,7 +59,7 @@ padding: 120px 116px 0 116px;
         font-size: 14px;
             letter-spacing: 0.04;
             line-height: 2.16em;
-            padding: 17px 49.18px 8px 44.71px;
+            padding: 0px 49.18px 8px 44.71px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -69,11 +79,15 @@ padding: 120px 116px 0 116px;
   z-index: -2;
 
 @media screen and (min-width: $tablet) {
-padding: 20px 6px 36px 6px;
+padding: 37px 6px 34px 6px;
+border: none;
+background-color: transparent;
     }
 
     @media screen and (min-width: $desktop) {
 padding: 32px 74px 31px 72px;
+background-color: #fafafa;
+border: 1px solid;
     }
 }
 
