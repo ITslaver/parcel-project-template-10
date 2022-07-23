@@ -1,26 +1,22 @@
 .container {
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-        @mixin mobile {
-        @media screen and (min-width: $mobile) {
-        @content;
-        }
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include mobile {
+        max-width: $mobile;
     }
-        @mixin tablet {
-        @media screen and (min-width: $tablet) {
-        @content;
-        }
+    @include tablet {
+        max-width: $tablet;
+        padding-left: 32px;
+        padding-right: 32px;
     }
-        @mixin desktop {
-        @media screen and (min-width: $desktop) {
-        @content;
-        }
+    @include desktop {
+        max-width: $desktop;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-        @mixin retina {
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @content;
-        }
-    }
+
 }
