@@ -1,5 +1,9 @@
-<h2 class="testimonials__title">Testimonials</h2>
-<section class="slider testimonials">
+$main-font: 'DM Sans', sans-serif;
+$secondaru-font: 'Titan One', cursive;
+
+<section class="testimonials">
+    <h2 class="testimonials__title">Testimonials</h2>
+    <div class="testimonials__slired">
 <div class="testimonials__slide">
     <img class="testimonials__avatars" srcset="./images/testimonials1-min.png x1, ./images/testimonials1@2x-min.png 2x"
     sizes="(min-width: 768px) 354px, (min-width: 1200px) 370px, 450px"  src="./images/testimonials1-min.png" alt="Emily avatar" width="85px" height="85px">
@@ -18,6 +22,7 @@
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus.</p></div>
     <h3 class="testimonials__author">Jain, Chichago</h3>
 </div>
+</div>
 </section>
 
 
@@ -28,7 +33,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-      $(".testimonials").slick({
+      $(".testimonials__slider").slick({
   dots: true,
   infinite: true,
   speed: 500,
