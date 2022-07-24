@@ -9,14 +9,15 @@
     z-index: 10;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    // max-width: $tablet;
 }
 
 .header__logo {
     margin-top: 8px;
     margin-bottom: 8px;
+
+    @include tablet {
+        margin-top: 32px;
+    }
 }
 
 .header__menu-open {
@@ -34,6 +35,39 @@
     .header__menu-open:hover &,
     .header__menu-open:focus & {
         stroke: $white;
+    }
+}
+
+.header__hidden-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    width: 209px;
+    padding: 11.5px 0;
+    margin-bottom: 19px;
+
+    border: 0;
+    border-radius: 22px;
+
+    background-color: $white;
+    color: $title-color;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    transition: background-color $time-duration $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $gray;
+    }
+
+    @media screen and (max-width: $mobile) {
+        display: none;
     }
 }
 
