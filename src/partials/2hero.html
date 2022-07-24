@@ -1,6 +1,36 @@
 <section class="hero">
   <div class="container">
-    <div class="hero__circle"></div>
+    <div class="hero__circle">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-icecream-d.png    1x,
+            ./images/hero-icecream-d@2x.png 2x
+          "
+          media="screen and (min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero-icecream-t.png    1x,
+            ./images/hero-icecream-t@2x.png 2x
+          "
+          media="screen and (min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero-icecream-m.png    1x,
+            ./images/hero-icecream-m@2x.png 2x
+          "
+          media="screen and (min-width: 480px)"
+        />
+        <img
+          src="./images/hero-icecream-m.png"
+          alt="icecream"
+          class="hero__img"
+          width="171"
+        />
+      </picture>
+    </div>
     <h1 class="hero__title">
       ice cream made with
       <span class="hero__title--prcolor">passion</span>
@@ -9,7 +39,7 @@
       <li class="hero__btn">
         <a href="#products" class="hero__link link">Products</a>
       </li>
-      <li class="hero__btn">
+      <li class="hero__btn hero__btn--light">
         <a href="#how_its_made" class="hero__link link">How it’s made?</a>
       </li>
     </ul>

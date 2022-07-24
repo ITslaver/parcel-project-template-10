@@ -1,8 +1,27 @@
 .hero {
-  position: relative;
   min-height: 502px;
   overflow: hidden;
   background-color: $pink;
+  .container {
+    position: relative;
+  }
+}
+
+.hero__circle {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background: $circle_color;
+}
+
+.hero__img {
+  position: absolute;
+  top: 9px;
+  left: 81px;
+  width: 171px;
 }
 
 .hero__title {
@@ -33,12 +52,34 @@
   display: flex;
 }
 
-.hero__circle {
-  position: absolute;
-  top: 83px;
-  left: 36px;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  background: $circle_color;
+.hero__btn {
+  background: $title_color;
+  border-radius: 20px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  color: $white;
+  transition: color $time-duration $time-function,
+    background-color $time-duration $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: $title_color;
+  }
+}
+
+.hero__btn--light {
+  background-color: $white;
+  color: $title_color;
+  margin-left: 8px;
+}
+
+.hero__link {
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  color: currentColor;
 }
