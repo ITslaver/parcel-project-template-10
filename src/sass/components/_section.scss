@@ -1,4 +1,10 @@
 .section {
+
+    @media  screen and (min-width: 320px) {
+        padding-top: 30px; 
+        ; 
+        }
+
     @include mobile {
         padding-top: 40px; 
         }

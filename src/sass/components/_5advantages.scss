@@ -1,0 +1,48 @@
+.advanteges__list {
+    @include mobile {
+        
+    }
+    @include tablet {
+        
+        display: flex;
+    }
+    @include desktop {
+
+    }
+}
+
+.advanteges__item {
+    @include mobile {
+    width: 230px;
+    height: 96px;
+    }
+    @include tablet {
+    width: 160px;
+    height: 130px;
+    margin-right: 22px;
+    }
+    @include desktop {
+    width: 288px;
+    height: 133px;
+    margin-right: 80px;
+    }
+}
+
+.advanteges__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 1.14;
+    text-transform: uppercase;
+    color: $title_color;
+    margin-bottom: 13px;
+}
+
+.text-after__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.70;
+    color: #000000;
+}
