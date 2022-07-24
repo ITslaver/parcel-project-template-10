@@ -13,7 +13,6 @@
 
     &.go-wide {
         @media screen and (max-width: $mobile) {
-                padding: 0;
                 margin: 0;
                 
                 position: absolute;
@@ -31,6 +30,8 @@
                 transform: translateX(0);
 
                 max-width: $tablet;
+
+                transition: transform $time-duration $time-function;
             }
     }
 
@@ -106,9 +107,28 @@
 }
 
 .header__nav {
-    display: none;
+    // display: none;
+    visibility: hidden;
+    transform: translateX(300%);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    background-color: $dark-pink;
+
+    height: 100vh;
+    min-width: 254px;
+    
+    transition: transform 500ms $time-function,
+        visibility 500ms $time-function;
     
     &.is-open {
+        visibility: visible;
+
         display: flex;
         flex-direction: column;
         padding-top: 20px;
@@ -116,13 +136,16 @@
         position: absolute;
         top: 0;
         left: 0;
+        transform: translateX(0);
         z-index: 15;
-        overflow-y: scroll;
     
         height: 100vh;
         width: 100vw;
     
         background-color: $dark-pink;
+
+        transition: transform 500ms $time-function,
+            visibility 500ms $time-function;
 
         @media screen and (min-width: $mobile) and (orientation: landscape) {
             max-width: 254px;
