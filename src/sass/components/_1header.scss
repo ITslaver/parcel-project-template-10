@@ -4,11 +4,45 @@
 
 .header__container {
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 0;
+    transform: translateX(-50%);
     z-index: 10;
     display: flex;
     align-items: center;
+
+    &.go-wide {
+        @media screen and (max-width: $mobile) {
+                padding: 0;
+                margin: 0;
+                
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translateX(0);
+        }
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) and (orientation: landscape) {
+                padding-left: 32px;
+                margin: 0;
+                
+                right: 0;
+                left: auto;
+                transform: translateX(0);
+
+                max-width: $tablet;
+            }
+    }
+
+    @include tablet {
+        padding-top: 32px;
+    }
+    
+    // @include desktop {
+    //     max-width: $desktop;
+    //     padding-left: 16px;
+    //     padding-right: 16px;
+    // }
 }
 
 .header__logo {
@@ -16,7 +50,7 @@
     margin-bottom: 8px;
 
     @include tablet {
-        margin-top: 32px;
+        margin: 0;
     }
 }
 
@@ -43,12 +77,12 @@
     align-items: baseline;
     justify-content: center;
 
-    width: 209px;
+    width: 160px;
     padding: 11.5px 0;
-    margin-bottom: 19px;
 
     border: 0;
     border-radius: 22px;
+    margin-left: 32px;
 
     background-color: $white;
     color: $title-color;
@@ -66,29 +100,35 @@
         background-color: $gray;
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
 
 .header__nav {
     display: none;
-
-    &.is-open{
+    
+    &.is-open {
         display: flex;
         flex-direction: column;
         padding-top: 20px;
-        
+    
         position: absolute;
         top: 0;
         left: 0;
         z-index: 15;
         overflow-y: scroll;
-        
+    
         height: 100vh;
         width: 100vw;
-
+    
         background-color: $dark-pink;
+
+        @media screen and (min-width: $mobile) and (orientation: landscape) {
+            max-width: 254px;
+            right: 0;
+            left: auto;
+        }
     }
 }
 
