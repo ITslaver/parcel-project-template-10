@@ -1,13 +1,67 @@
 .header {
-    background-color: $pink;
-    border: 2px solid black;
-    //бордер временно сделала для себя, чтобы видеть границы блока
+    background-color: transparent;
+}
+
+.header__container {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    &.go-wide {
+        @media screen and (max-width: $mobile) {
+                margin: 0;
+                
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translateX(0);
+        }
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) and (orientation: landscape) {
+                padding-left: 32px;
+                margin: 0;
+                
+                right: 0;
+                left: auto;
+                transform: translateX(0);
+
+                max-width: $tablet;
+
+                transition: transform $time-duration $time-function;
+            }
+    }
+
+    @include tablet {
+        padding-top: 32px;
+    }
+    
+    @include desktop {
+        padding-top: 37px;
+    }
+}
+
+.header__logo {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    @include tablet {
+        margin: 0;
+    }
 }
 
 .header__menu-open {
     background-color: transparent;
     border: 0;
     padding: 0;
+    margin-left: auto;
+
+    @include desktop {
+        display: none;
+    }
 }
 
 .header__menu-icon {
@@ -21,10 +75,111 @@
     }
 }
 
+.header__hidden-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    width: 160px;
+    padding: 11.5px 0;
+
+    border: 0;
+    border-radius: 22px;
+    margin-left: 32px;
+
+    background-color: $white;
+    color: $title-color;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    transition: background-color $time-duration $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $gray;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include desktop {
+        margin-left: auto;
+        width: 160px;
+    }
+}
+
+.header__nav {
+    visibility: hidden;
+    transform: translateX(300%);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    background-color: $dark-pink;
+
+    height: 100vh;
+    min-width: 254px;
+    
+    transition: transform 500ms $time-function,
+        visibility 500ms $time-function;
+
+    @include desktop {
+        visibility: visible;
+        position: static;
+        transform: translateX(0);
+
+        padding-top: 0;
+        margin-left: 128px;
+
+        background-color: transparent;
+
+        height: 100%;
+    }
+    
+    &.is-open {
+        visibility: visible;
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    
+        left: 0;
+        transform: translateX(0);
+        z-index: 15;
+    
+        width: 100vw;
+
+        transition: transform 500ms $time-function,
+            visibility 500ms $time-function;
+
+        @media screen and (min-width: $mobile) and (orientation: landscape) {
+            max-width: 254px;
+            right: 0;
+            left: auto;
+        }
+    }
+}
+
 .header__menu-close {
     background-color: transparent;
     border: 0;
     padding: 0;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 26px;
+
+    @include desktop {
+        display: none;
+    }
 }
 
 .header__close-icon {
@@ -43,11 +198,11 @@
     align-items: baseline;
     justify-content: center;
 
+    align-self: center;
+
     width: 209px;
-    padding-top: 11.5px;
-    padding-bottom: 11.5px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 11.5px 0;
+    margin-bottom: 19px;
 
     border: 0;
     border-radius: 22px;
@@ -55,7 +210,7 @@
     background-color: $white;
     color: $title-color;
 
-    font-family: $text-font;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -66,6 +221,14 @@
     &:hover, &:focus {
         background-color: $gray;
     }
+
+    @include tablet {
+        width: 186px;
+    }
+
+    @include desktop {
+        display: none;
+    }
 }
 
 .header__arrow-icon {
@@ -73,8 +236,36 @@
     margin-left: 21px;
 }
 
+.header__nav-list {
+    @include desktop {
+        display: flex;
+    }
+}
+
+.header__nav-item {
+    padding: 13px 20px;
+    border-top: 1px solid #E18298;
+
+    &:last-child {
+        border-bottom: 1px solid #E18298;
+
+        @include desktop {
+            border: none;
+        }
+    }
+
+    @include desktop {
+        border: none;
+        padding: 0;
+
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+}
+
 .header__nav-link {
-    font-family: $text-font;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -86,6 +277,11 @@
     &:hover, &:focus {
             color: $title-color;
         }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.31;
+    }
 }
 
 .header__nav-link--active {
