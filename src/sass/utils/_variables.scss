@@ -5,13 +5,23 @@ $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
 
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 250ms;
+
 $white: #FFFFFF;
-$label_color: #FFA5BA;
+$label_color: #424040;
 $title_color: #D41443;
 $back_color: #FFF5F6;
 $pink: #FFB8CA;
+$dark-pink: #E17992;
 $yellow: #F0D1A5;
 $green: #C2E297;
 $circle_color: #FFA5BA;
 $gray: #E1E1E1;
 $brown: #907E82;
+
+$text-font: 'DM Sans', sans-serif;
+$title-font: 'Titan One', display;
+
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+$time-duration: 250ms;

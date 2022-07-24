@@ -7,13 +7,19 @@
       <path fill="#d41443" style="fill:var(--color2, #d41443)" d="M8.629 23.308c0 3.524 1.224 4.229 7.406 4.229s7.406-.705 7.406-4.229c0-1.538-.322-2.178-.966-2.178-.58 0-.966.577-.966 1.538 0 3.588-4.894 3.908-5.603.384-.322-1.858-.515-1.922-3.8-1.922H8.629v2.178zM12.622 30.548c.386 2.05 6.955 1.858 6.955-.128 0-.705-.837-.961-3.606-.961-3.027 0-3.542.192-3.349 1.089z"/>
     </symbol>
     <symbol id="icon-Burger" viewBox="0 0 46 32">
-      <path fill="none" stroke="#d41443" style="stroke:var(--color2, #d41443)" stroke-width="2.286" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"/>
+      <path fill="none" stroke-width="2.286" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"/>
     </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke:var(--color1, #fff)" stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/>
+      <path fill="none" stroke-width="2" d="m2.519 2 26.963 28M2 29.481 30 2.518"/>
+    </symbol>
+    <symbol id="icon-small-arrow" viewBox="0 0 22 32">
+      <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.321 3.2 18.295 16 3.321 28.8"/>
     </symbol>
     <symbol id="icon-arrow_in_button" viewBox="0 0 22 32">
       <path d="M5.575 3.2 18.455 16 5.575 28.8"/>
+    </symbol>
+    <symbol id="arow" viewBox="0 0 35 32">
+    <path fill="#D7224D" style="fill: var(--color1, #D7224D)" d="M16.375 0.177l-3.407 3.377 9.561 9.283h-21.977l0 6.327h21.977l-9.631 9.206 3.477 3.452 15.823-15.823-15.823-15.823z"></path>
     </symbol>
     <symbol id="icon-Decor" viewBox="0 0 139 32">
       <path d="M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16 7.163-16 16-16 16 7.163 16 16zM32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16zM138.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16 7.163-16 16-16 16 7.163 16 16z"/>
@@ -35,6 +41,9 @@
     </symbol>
     <symbol id="icon-telegram" viewBox="0 0 44 32">
       <path fill="#fff" style="fill:var(--color1, #fff)" d="m17.343 21.048-.675 8.86c.966 0 1.384-.387 1.885-.852l4.527-4.038 9.381 6.412c1.721.895 2.933.424 3.397-1.477l6.159-26.93c.546-2.374-.92-3.302-2.596-2.72L3.227 13.236c-2.47.895-2.433 2.18-.42 2.762l9.253 2.686L33.554 6.132c1.012-.625 1.931-.279 1.175.346l-17.386 14.57z"/>
+    </symbol>
+    <symbol id="icon-him" viewBox="0 0 26 32">
+    <path fill="none" stroke="#D41443" style="stroke: var(--color1, #D41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
     </symbol>
   </defs>
 </svg>

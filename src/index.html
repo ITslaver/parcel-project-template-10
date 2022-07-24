@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
+  <body class="data-nonScroll" data-nonScroll>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- <include src="./partials/example.html"></include>Все работает  -->
-    <include src="./partials/1header.htm"></include>
+    <include src="./partials/1header.html"></include>
     <include src="./partials/2hero.html"></include>
     <include src="./partials/3prodacts.html"></include>
     <include src="./partials/4about.html"></include>
@@ -26,5 +27,9 @@
     <include src="./partials/8contacts.html"></include>
     <include src="./partials/9footer.html"></include>
     <include src="./partials/0-mobail-menu.html"></include>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
