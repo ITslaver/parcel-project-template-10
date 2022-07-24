@@ -1,13 +1,25 @@
 .header {
     background-color: $pink;
-    border: 2px solid black;
-    //бордер временно сделала для себя, чтобы видеть границы блока
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__logo {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .header__menu-open {
     background-color: transparent;
     border: 0;
     padding: 0;
+    margin-left: auto;
 }
 
 .header__menu-icon {
@@ -18,6 +30,28 @@
     .header__menu-open:hover &,
     .header__menu-open:focus & {
         stroke: $white;
+    }
+}
+
+.header__nav {
+    display: none;
+
+    &.is-open{
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        overflow-y: scroll;
+        
+        height: 100vh;
+        width: 100vw;
+
+        background-color: $dark-pink;
     }
 }
 
@@ -55,7 +89,7 @@
     background-color: $white;
     color: $title-color;
 
-    font-family: $text-font;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -74,7 +108,7 @@
 }
 
 .header__nav-link {
-    font-family: $text-font;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
