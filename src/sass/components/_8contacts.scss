@@ -1,0 +1,123 @@
+.section-contacts{
+    background-color: #FFF5F6;
+    font-family: "DM Sans", sans-serif;
+}
+.our-representations{
+    margin-bottom: 32px;
+    
+}
+
+.representations__list {
+    margin: -20px;
+}
+
+.representations__item{
+    width: calc(100% - 40px);
+    max-width: 480px;
+    margin: 20px;
+}
+
+.representation {
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    background: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.representation__section{
+    &:not(:first-child){
+        padding-top: 24px;
+    }
+    &:not(:last-child){
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
+
+.representation__type{
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $white;
+    border-radius: 4px;
+}
+
+.representation__type-cafe{
+    background-color: $yellow;
+}
+
+.representation__type-foodtruck{
+    background-color: #C2E297;
+}
+
+.representation__city {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.representation__description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $brown;
+}
+
+.representation__working-days {
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+}
+
+.representation__working-hours {
+    font-size: 12px;
+    line-height: 1.86;
+    color: #FFA5BA;
+}
+
+.representation__contact-tel {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $brown;
+}
+
+.representation__contact-email {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $brown;
+}
+
+.button-contacts{
+    height: 44px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.button-locations{
+    color: $white;
+    background-color: #D41342;
+}
+.button-locations__icon{
+    fill: $white;
+}
+.button-franchise{
+    color:#D41443;
+    background-color: $white;
+}
+
+.button-franchise-icon{
+    fill: #D41443;
+}
