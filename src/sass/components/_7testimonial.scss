@@ -3,6 +3,7 @@ $secondaru-font: 'Titan One', cursive;
 
 .testimonials__title {
   visibility: hidden;
+  height: 0;
 }
 
 .testimonials {
@@ -16,6 +17,10 @@ $secondaru-font: 'Titan One', cursive;
     @media screen and (min-width: $desktop) {
 padding: 120px 116px 0 116px;
     }
+}
+
+.testimonials__slide {
+  overflow: overlay;
 }
 
 .testimonials__avatars {
@@ -53,7 +58,7 @@ top: 32px;
   background: repeating-linear-gradient(transparent 0 29px, #e1e1e1 30px 31px);
   display: block;
   font-size: 12px;
-  line-height: 2.55em;
+  line-height: 2.55em;;
   text-align: center;
   font-weight: 500;
   font-family: $main-font;
@@ -98,7 +103,7 @@ background-color: #fafafa;
   content: '. . .';
   color: $title_color;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 44px;
   display: block;
   line-height: 1em;
 }
