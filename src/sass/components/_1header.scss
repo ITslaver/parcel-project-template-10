@@ -1,13 +1,25 @@
 .header {
     background-color: $pink;
-    border: 2px solid black;
-    //бордер временно сделала для себя, чтобы видеть границы блока
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__logo {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .header__menu-open {
     background-color: transparent;
     border: 0;
     padding: 0;
+    margin-left: auto;
 }
 
 .header__menu-icon {
@@ -21,10 +33,34 @@
     }
 }
 
+.header__nav {
+    display: none;
+
+    &.is-open{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 15;
+        overflow-y: scroll;
+        
+        height: 100vh;
+        width: 100vw;
+
+        background-color: $dark-pink;
+    }
+}
+
 .header__menu-close {
     background-color: transparent;
     border: 0;
     padding: 0;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 26px;
 }
 
 .header__close-icon {
@@ -43,11 +79,11 @@
     align-items: baseline;
     justify-content: center;
 
+    align-self: center;
+
     width: 209px;
-    padding-top: 11.5px;
-    padding-bottom: 11.5px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 11.5px 0;
+    margin-bottom: 19px;
 
     border: 0;
     border-radius: 22px;
@@ -55,7 +91,7 @@
     background-color: $white;
     color: $title-color;
 
-    font-family: $text-font;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -73,8 +109,17 @@
     margin-left: 21px;
 }
 
+.header__nav-item {
+    padding: 13px 20px;
+    border-top: 1px solid #E18298;
+
+    &:last-child {
+        border-bottom: 1px solid #E18298;
+    }
+}
+
 .header__nav-link {
-    font-family: $text-font;
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
