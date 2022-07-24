@@ -1,4 +1,4 @@
-.about {
+.about .container {
   padding-top: 60px;
   background-color: $back_color;
 
@@ -179,7 +179,7 @@
   border-radius: 22px;
   border: none;
   background-color: #fff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-duration $time-function;
 }
 
 .about__btn:hover {
