@@ -39,11 +39,9 @@
         padding-top: 32px;
     }
     
-    // @include desktop {
-    //     max-width: $desktop;
-    //     padding-left: 16px;
-    //     padding-right: 16px;
-    // }
+    @include desktop {
+        padding-top: 37px;
+    }
 }
 
 .header__logo {
@@ -60,6 +58,10 @@
     border: 0;
     padding: 0;
     margin-left: auto;
+
+    @include desktop {
+        display: none;
+    }
 }
 
 .header__menu-icon {
@@ -104,10 +106,14 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
+
+    @include desktop {
+        margin-left: auto;
+        width: 160px;
+    }
 }
 
 .header__nav {
-    // display: none;
     visibility: hidden;
     transform: translateX(300%);
     position: absolute;
@@ -125,6 +131,19 @@
     
     transition: transform 500ms $time-function,
         visibility 500ms $time-function;
+
+    @include desktop {
+        visibility: visible;
+        position: static;
+        transform: translateX(0);
+
+        padding-top: 0;
+        margin-left: 128px;
+
+        background-color: transparent;
+
+        height: 100%;
+    }
     
     &.is-open {
         visibility: visible;
@@ -162,6 +181,10 @@
     margin-left: auto;
     margin-right: 20px;
     margin-bottom: 26px;
+
+    @include desktop {
+        display: none;
+    }
 }
 
 .header__close-icon {
@@ -203,11 +226,25 @@
     &:hover, &:focus {
         background-color: $gray;
     }
+
+    @include tablet {
+        width: 186px;
+    }
+
+    @include desktop {
+        display: none;
+    }
 }
 
 .header__arrow-icon {
     stroke: $title_color;
     margin-left: 21px;
+}
+
+.header__nav-list {
+    @include desktop {
+        display: flex;
+    }
 }
 
 .header__nav-item {
@@ -216,6 +253,19 @@
 
     &:last-child {
         border-bottom: 1px solid #E18298;
+
+        @include desktop {
+            border: none;
+        }
+    }
+
+    @include desktop {
+        border: none;
+        padding: 0;
+
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
     }
 }
 
@@ -232,6 +282,11 @@
     &:hover, &:focus {
             color: $title-color;
         }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.31;
+    }
 }
 
 .header__nav-link--active {
