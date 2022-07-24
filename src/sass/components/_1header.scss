@@ -1,18 +1,57 @@
 .header {
-    background-color: $pink;
+    background-color: transparent;
 }
 
 .header__container {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 10;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    &.go-wide {
+        @media screen and (max-width: $mobile) {
+                padding: 0;
+                margin: 0;
+                
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translateX(0);
+        }
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) and (orientation: landscape) {
+                padding-left: 32px;
+                margin: 0;
+                
+                right: 0;
+                left: auto;
+                transform: translateX(0);
+
+                max-width: $tablet;
+            }
+    }
+
+    @include tablet {
+        padding-top: 32px;
+    }
+    
+    // @include desktop {
+    //     max-width: $desktop;
+    //     padding-left: 16px;
+    //     padding-right: 16px;
+    // }
 }
 
 .header__logo {
     margin-top: 8px;
     margin-bottom: 8px;
+
+    @include tablet {
+        margin: 0;
+    }
 }
 
 .header__menu-open {
@@ -33,24 +72,63 @@
     }
 }
 
+.header__hidden-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    width: 160px;
+    padding: 11.5px 0;
+
+    border: 0;
+    border-radius: 22px;
+    margin-left: 32px;
+
+    background-color: $white;
+    color: $title-color;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    transition: background-color $time-duration $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $gray;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .header__nav {
     display: none;
-
-    &.is-open{
+    
+    &.is-open {
         display: flex;
         flex-direction: column;
         padding-top: 20px;
-        
+    
         position: absolute;
         top: 0;
         left: 0;
         z-index: 15;
         overflow-y: scroll;
-        
+    
         height: 100vh;
         width: 100vw;
-
+    
         background-color: $dark-pink;
+
+        @media screen and (min-width: $mobile) and (orientation: landscape) {
+            max-width: 254px;
+            right: 0;
+            left: auto;
+        }
     }
 }
 
