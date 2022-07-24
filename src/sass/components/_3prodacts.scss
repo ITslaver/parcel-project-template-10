@@ -1,37 +1,101 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-body {
-  font-family: $main-font;
-  font-family: $secondary-font;
+.product-title {
+  text-align: center;
+  margin-bottom: 281px;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
+.product-title__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 16px;
 }
-
-img {
+.produkt-title__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+.product-list {
   display: block;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+// --------------------------------------------------------------------------------position absolute
+.product-list__box {
+  display: block;
+  position: relative;
+  width: 368px;
+  height: 535px;
+  padding: 165px 63px 60px 64px;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+  //   width: calc((100% - 96px) / 3);
+}
+.product-list__box.pic::before {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  content: '';
+  width: 368px;
+  height: 394px;
+  background-size: contain;
+  background-image: url(/src/images/ice-cream-min.png);
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.product-list__box.inner {
+  background-color: #f0d1a5;
+}
+.product-list__box.inner::before {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  content: '';
+  width: 368px;
+  height: 394px;
+  background-size: contain;
+  background-image: url(/src/images/ice-coffee-min.png);
 }
 
-.link {
-  text-decoration: none;
+.holder {
+  background-color: #c2e297;
 }
-
-.no-scroll {
-  overflow: hidden;
+.product-list__box.holder::before {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  content: '';
+  width: 368px;
+  height: 394px;
+  background-size: contain;
+  background-image: url(/src/images/milkshakes-min.png);
+}
+.product-list__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.product-list__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
