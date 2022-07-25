@@ -2,72 +2,80 @@
   <div class="container">
     <div class="product-title">
       <label for="title" class="product-title__label">100% natural</label>
-      <h1 id="title" class="produkt-title__title">products</h1>
+      <h2 id="title" class="produkt-title__title">products</h2>
     </div>
     <ul class="product-list">
-      <div class="product-list__box pic">
-        <li class="product-list__item list">
+      <li class="product-list__item list">
+        <div class="product-list__box pic">
           <h2 class="product-list__subtitle">ice cream</h2>
-          <span class="product-list__text">
+          <div class="product-list__text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
             minus autem corporis facilis, natus cum ut. Doloribus,
             necessitatibus iure.
-          </span>
-          <!-- <span class="product-list__text"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            hic minima illo in, possimus soluta! Quod repellat repudiandae
-            recusandae expedita eveniet. Tenetur ab, et quis doloremque esse
-            praesentium vero non.</span
-          > -->
-          <button class="product-button">
-            <svg class="product-button__icon" width="11px" height="11px">
-              <use href="#"></use>
-            </svg>
-          </button>
-        </li>
-      </div>
-      <div class="product-list__box inner">
-        <li class="product-list__item list">
-          <h2 class="product-list__subtitle">ice coffee</h2>
-          <span class="product-list__text">
+            <span class="more" style="display: none"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              reprehenderit atque porro id delectus vitae ex asperiores, laborum
+              cupiditate adipisci fuga similique esse, vero illum omnis totam
+              sapiente harum perferendis.</span
+            >
+          </div>
+          <div class="product-btn">
+            <button class="product-button" onclick="readMore()">
+              <svg class="product-button__icon" width="15px" height="15px">
+                <use href="./images/icons.svg#arow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <li class="product-list__item list">
+        <div class="product-list__box inner">
+          <h2 class="product-list__subtitle">ice cream</h2>
+          <div class="product-list__text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
             minus autem corporis facilis, natus cum ut. Doloribus,
             necessitatibus iure.
-          </span>
-          <!-- <span class="product-list__text">
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            hic minima illo in, possimus soluta! Quod repellat repudiandae
-            recusandae expedita eveniet. Tenetur ab, et quis doloremque esse
-            praesentium vero non.</span
-          > -->
-          <button class="product-button">
-            <svg class="product-button__icon" width="11px" height="11px">
-              <use href="#"></use>
-            </svg>
-          </button>
-        </li>
-      </div>
-      <div class="product-list__box holder">
-        <li class="product-list__item list">
-          <h2 class="product-list__subtitle">milkshakes</h2>
-          <span class="product-list__text">
+            <span class="more-second" style="display: none"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              reprehenderit atque porro id delectus vitae ex asperiores, laborum
+              cupiditate adipisci fuga similique esse, vero illum omnis totam
+              sapiente harum perferendis.</span
+            >
+          </div>
+          <div class="product-btn">
+            <button class="product-button" onclick="readMoreSecond()">
+              <svg class="product-button__icon" width="15px" height="15px">
+                <use href="./images/icons.svg#arow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <li class="product-list__item list">
+        <div class="product-list__box holder">
+          <h2 class="product-list__subtitle">ice cream</h2>
+          <div class="product-list__text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
             minus autem corporis facilis, natus cum ut. Doloribus,
             necessitatibus iure.
-          </span>
-          <!-- <span class="product-list__text"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            hic minima illo in, possimus soluta! Quod repellat repudiandae
-            recusandae expedita eveniet. Tenetur ab, et quis doloremque esse
-            praesentium vero non.</span
-          > -->
-          <button class="product-button">
-            <svg class="product-button__icon" width="11px" height="11px">
-              <use href="#"></use>
-            </svg>
-          </button>
-        </li>
-      </div>
+            <span class="more-third" style="display: none"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              reprehenderit atque porro id delectus vitae ex asperiores, laborum
+              cupiditate adipisci fuga similique esse, vero illum omnis totam
+              sapiente harum perferendis.</span
+            >
+          </div>
+          <div class="product-btn">
+            <button class="product-button" onclick="readMoreThird()">
+              <svg class="product-button__icon" width="15px" height="15px">
+                <use href="./images/icons.svg#arow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
