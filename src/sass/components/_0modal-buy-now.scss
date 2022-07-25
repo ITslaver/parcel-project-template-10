@@ -80,13 +80,13 @@
     color: $title_color;
     border: 0;
 
-    transition: background-color 250ms $time-function;
+    transition: background-color $transition-duration $time-function;
 }
 
 .modal__close-icon {
     stroke: currentColor;
 
-    transition: fill 250ms $time-function;
+    transition: fill $transition-duration $time-function;
 
     .modal__close-button:hover &,
     .modal__close-button:focus & {
@@ -136,7 +136,7 @@
 
     fill: $pink;
 
-    transition: fill 250ms $time-function;
+    transition: fill $transition-duration $time-function;
 
     .modal__container:focus-within & {
         fill: $dark-pink;
@@ -162,7 +162,7 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
 
-    transition: border 250ms $time-function;
+    transition: border $transition-duration $time-function;
 
     &:focus {
         border: 1px solid $dark-pink;
@@ -170,40 +170,51 @@
     }
 }
 
-.modal__comment {
-    width: 100%;
-    padding: 12px 16px;
-    margin-bottom: 20px;
+.modal__order {
+    margin-top: 0;
+    margin-bottom: 12px;
+    
+    color: $title_color;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.13;
+    text-align: center;
+}
 
-    border: 1px solid $pink;
-    border-radius: 6px;
+.modal__list-item {
+    display: flex;
+    align-items: baseline;
+}
 
-    resize: none;
+.modal__list-label {
+    color: $dark-pink;
 
-    color: $title-color;
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 1.25;
+    font-size: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
 
-    transition: border 250ms $time-function;
+    margin-right: 10px;
+    margin-left: auto;
+}
 
-    &:focus {
-        border: 1px solid $dark-pink;
-        outline: transparent;
-    }
+.modal__list-input {
+    @extend .modal__input;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 
     &::placeholder {
+        color: $pink;
         font-family: $main-font;
-        font-style: normal;
-        font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
-
-        color: $pink;
     }
 }
 
@@ -247,6 +258,7 @@
     justify-content: center;
 
     margin-bottom: 30px;
+    margin-top: 12px;
 }
 
 .modal__check {
@@ -273,15 +285,12 @@
     color: $dark-pink;
 
     margin-left: auto;
+    margin-right: auto;
 
-    @media screen and (min-width: $desktop) {
+    @include desktop {
         font-size: 14px;
         line-height: 1.71;
         padding-right: 11px;
-    }
-
-    @media screen and (max-width: 450px) {
-        margin-left: 24px;
     }
 }
 
@@ -293,9 +302,11 @@
     visibility: visible;
     opacity: 1;
 
-    transition: fill 250ms $time-function,
-        opacity 250ms $time-function,
-        visibility 250ms $time-function;
+    fill: $pink;
+
+    transition: fill $transition-duration $time-function,
+        opacity $transition-duration $time-function,
+        visibility $transition-duration $time-function;
 
     .modal__agreement:hover & {
         fill: $title_color;
@@ -327,8 +338,8 @@
     opacity: 0;
     visibility: hidden;
 
-    transition: opacity 250ms $time-function,
-        visibility 250ms $time-function;
+    transition: opacity $transition-duration $time-function,
+        visibility $transition-duration $time-function;
 
     .modal__check:checked~.modal__agreement>& {
         visibility: visible;

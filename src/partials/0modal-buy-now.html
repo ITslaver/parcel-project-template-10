@@ -30,11 +30,22 @@
                 </svg>
                 <input type="email" class="modal__input" name="email" id="email" />
             </div>
-
-            <label for="comment" class="modal__label">I wish to purchase...</label>
-            <textarea class="modal__comment" name="comment" id="comment" placeholder="Place your order"
-                rows="4"></textarea>
-
+            <h3 class="modal__order">Select product and quantity</h3>
+            <ul class="modal__list list">
+                <li class="modal__list-item">
+                    <label for="iceCream" class="modal__list-label">Ice cream</label>
+                    <input type="number" class="modal__list-input" name="iceCream" id="iceCream" placeholder="Choose number" min="0" />
+                </li>
+                <li class="modal__list-item">
+                    <label for="iceCoffee" class="modal__list-label">Ice coffee</label>
+                    <input type="number" class="modal__list-input" name="iceCoffee" id="iceCoffee" placeholder="Choose number" min="0" />
+                </li>
+                <li class="modal__list-item">
+                    <label for="milkshake" class="modal__list-label">Milkshake</label>
+                    <input type="number" class="modal__list-input" name="milkshake" id="milkshake" placeholder="Choose number" min="0" />
+                </li>
+            </ul>
+            
             <div class="modal__policy">
                 <input type="checkbox" class="modal__check" name="policy" id="policy">
                 <label for="policy" class="modal__agreement">
