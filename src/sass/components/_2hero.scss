@@ -28,6 +28,13 @@
     width: 335px;
     height: 333px;
   }
+
+  @include desktop {
+    left: 517px;
+    top: 54px;
+    width: 534px;
+    height: 534px;
+  }
 }
 
 .hero__img {
@@ -38,8 +45,14 @@
 
   @include tablet {
     left: 74px;
-    top: 37px;
+    top: 39px;
     width: 143px;
+  }
+
+  @include desktop {
+    left: 119px;
+    top: 58px;
+    width: 236px;
   }
 }
 
@@ -54,6 +67,10 @@
 
 .hero__content--p1 {
   padding-bottom: 16px;
+
+  @include desktop {
+    padding-bottom: 60px;
+  }
 }
 
 .hero__title {
@@ -70,7 +87,16 @@
 
   @include tablet {
     padding-top: 102px;
+    max-width: 162px;
     font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @include desktop {
+    padding-top: 147px;
+    margin-bottom: 24px;
+    max-width: 277px;
+    font-size: 38px;
     line-height: 1.14;
   }
 }
@@ -84,6 +110,10 @@
   @include tablet {
     font-size: 34px;
     line-height: 0.9;
+  }
+
+  @include desktop {
+    font-size: 58px;
   }
 }
 
@@ -104,12 +134,20 @@
     background-color: #ecebeb;
     color: $title_color;
   }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__btn--light {
   background-color: $white;
   color: $title_color;
   margin-left: 8px;
+
+  @include desktop {
+    margin-left: 12px;
+  }
 }
 
 .hero__link {
@@ -122,6 +160,14 @@
   font-size: 8px;
   line-height: 1.25;
   color: currentColor;
+
+  @include desktop {
+    min-height: 40px;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .bioeco {
@@ -135,6 +181,10 @@
 
 .bioeco__img {
   width: 152px;
+
+  @include desktop {
+    width: 213px;
+  }
 }
 
 .bioeco__text {
@@ -144,24 +194,49 @@
   line-height: 1.5;
   color: $white;
   margin-bottom: 7px;
+
+  @include desktop {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
 }
 
 .bioeco__btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  border: 0;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: $white;
   border-color: transparent;
   color: $title_color;
+  transition: background-color $time-duration $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
+  }
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .bioeco__icon {
   width: 10px;
-  height: 8px;
+  height: 10px;
   fill: currentColor;
+  @include desktop {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .hero__content--p2 {
@@ -170,14 +245,23 @@
     display: none;
   }
   padding-top: 94px;
+  @include desktop {
+    padding-top: 156px;
+  }
 }
 
 .clients {
   padding-right: 10px;
+  @include desktop {
+    padding-right: 18px;
+  }
 }
 
 .clients__item:not(:last-child) {
   margin-bottom: 17px;
+  @include desktop {
+    margin-bottom: 18px;
+  }
 }
 
 .clients__number {
@@ -190,6 +274,11 @@
   text-transform: uppercase;
   color: $title_color;
 
+  @include desktop {
+    font-size: 46px;
+    margin-bottom: 2px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -200,6 +289,13 @@
     height: 16px;
     top: -2;
     right: -10;
+
+    @include desktop {
+      width: 30px;
+      height: 30px;
+      top: -3;
+      right: -18;
+    }
   }
 }
 
@@ -209,6 +305,10 @@
   font-size: 8px;
   line-height: 1.25;
   color: $white;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .clients_img {
@@ -216,4 +316,7 @@
   bottom: 0;
   right: 0;
   min-width: 190px;
+  @include desktop {
+    min-width: 304px;
+  }
 }
