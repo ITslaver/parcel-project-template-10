@@ -1,18 +1,22 @@
 .gallery {
-  background: linear-gradient(to bottom, #fff5f6 45%, #fff 45%);
+  background: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   @include mobile {
-    background: linear-gradient(to bottom, #fff5f6 42%, #fff 42%);
+    background: linear-gradient(to bottom, #fff5f6 44%, #fff 44%);
   }
   @include tablet {
-    background: linear-gradient(to bottom, #fff5f6 63%, #fff 63%);
+    background: linear-gradient(to bottom, #fff5f6 65%, #fff 65%);
   }
   @include desktop {
-    background: linear-gradient(to bottom, #fff5f6 35%, #fff 35%);
+    background: linear-gradient(to bottom, #fff5f6 38%, #fff 38%);
   }
 }
 .gallery_items {
   display: flex;
-  align-items: center;
+
   justify-content: center;
   padding-top: 60px;
   @include tablet {
@@ -54,13 +58,49 @@
     margin-bottom: 8px;
   }
 }
-.gallery__item:nth-child(5) {
-  margin-top: -10px;
+.gallery__item:nth-child(1) {
+  margin-top: 45px;
   @include tablet {
-    margin-top: -25px;
+    margin-top: 108px;
   }
   @include desktop {
-    margin-top: -33px;
+    margin-top: 143px;
+  }
+}
+.gallery__item:nth-child(2) {
+  margin-top: 28px;
+  @include tablet {
+    margin-top: 67px;
+  }
+  @include desktop {
+    margin-top: 89px;
+  }
+}
+.gallery__item:nth-child(4) {
+  margin-top: 31px;
+  @include tablet {
+    margin-top: 75px;
+  }
+  @include desktop {
+    margin-top: 99px;
+  }
+}
+.gallery__item:nth-child(5) {
+  margin-top: 21px;
+  @include tablet {
+    margin-top: 50px;
+  }
+  @include desktop {
+    margin-top: 66px;
+  }
+}
+.gallery__item:nth-child(6) {
+  margin-top: 49px;
+  @include tablet {
+    margin-top: 117px;
+  }
+  @include desktop {
+    margin-top: 155px;
   }
 }
 .gallery__img {
