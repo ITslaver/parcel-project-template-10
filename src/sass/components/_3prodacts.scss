@@ -1,53 +1,126 @@
 .product-title {
   text-align: center;
-  margin-bottom: 281px;
+  margin-bottom: 140px;
+  @include tablet {
+    margin-bottom: 158px;
+  }
+  @include desktop {
+    margin-bottom: 281px;
+  }
+
+  margin-top: 61px;
 }
 .product-title__label {
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.13;
+  font-size: 18px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
+  @include tablet {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @include desktop {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
   margin-bottom: 16px;
+  color: #ffa5ba;
 }
 .produkt-title__title {
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 1.14;
+  font-size: 34px;
+  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  @include tablet {
+    font-size: 48px;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
   color: #d41443;
 }
 .product-list {
   display: block;
-  display: flex;
+  @include tablet {
+    display: flex;
+    gap: 16px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
   margin: 0px;
   padding: 0px;
-  justify-content: space-between;
 }
+.product-list__item.list:not(:last-child) {
+  margin-bottom: 140px;
+}
+.product-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.product-button:focus,
+.product-button:hover {
+  background-color: #ecebeb;
+  transition: color 0.3s ease 0s;
+}
+.product-btn {
+  text-align: center;
+}
+
 // --------------------------------------------------------------------------------position absolute
 .product-list__box {
   display: block;
   position: relative;
-  width: 368px;
-  height: 535px;
-  padding: 165px 63px 60px 64px;
+  width: 280px;
+  padding: 160px 40px 40px 40px;
+  @include tablet {
+    width: 224px;
+    padding: 118px 32px 32px 40px;
+  }
+  @include desktop {
+    width: 368px;
+    padding: 165px 63px 60px 64px;
+  }
   background-color: #ffb8ca;
   border-radius: 24px;
-  //   width: calc((100% - 96px) / 3);
 }
 .product-list__box.pic::before {
   position: absolute;
-  top: -250px;
-  left: 0;
+  top: -140px;
+  left: 10px;
   content: '';
-  width: 368px;
-  height: 394px;
+  width: 280px;
+  height: 280px;
+  @include tablet {
+    width: 224px;
+    height: 224px;
+  }
+  @include desktop {
+    width: 368px;
+    height: 394px;
+    top: -250px;
+    left: 0;
+  }
   background-size: contain;
   background-image: url(/src/images/ice-cream-min.png);
 }
@@ -57,45 +130,90 @@
 }
 .product-list__box.inner::before {
   position: absolute;
-  top: -250px;
-  left: 0;
+  top: -140px;
+  left: 10px;
   content: '';
-  width: 368px;
-  height: 394px;
+  width: 280px;
+  height: 280px;
+  @include tablet {
+    width: 224px;
+    height: 224px;
+  }
+  @include desktop {
+    width: 368px;
+    height: 394px;
+    top: -250px;
+    left: 0;
+  }
   background-size: contain;
   background-image: url(/src/images/ice-coffee-min.png);
 }
 
-.holder {
+.product-list__box.holder {
   background-color: #c2e297;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 .product-list__box.holder::before {
   position: absolute;
-  top: -250px;
-  left: 0;
+  top: -140px;
+  left: 10px;
   content: '';
-  width: 368px;
-  height: 394px;
+  width: 280px;
+  height: 280px;
+  @include tablet {
+    width: 224px;
+    height: 224px;
+  }
+  @include desktop {
+    width: 368px;
+    height: 394px;
+    top: -250px;
+    left: 0;
+  }
   background-size: contain;
   background-image: url(/src/images/milkshakes-min.png);
 }
 .product-list__subtitle {
+  position: relative;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.13;
+  font-size: 20px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 64px;
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
   color: #ffffff;
+}
+.product-list__subtitle::after {
+  content: '...';
+  position: absolute;
+  bottom: -32px;
+  right: 43%;
 }
 .product-list__text {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.76;
+  font-size: 14px;
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
+  margin-bottom: 32px;
+  @include tablet {
+    line-height: 1.76;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+    margin-bottom: 60px;
+  }
   color: #ffffff;
 }
