@@ -1,0 +1,322 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: $pink;
+
+  @media screen and (max-width: 767px) {
+    min-height: 502px;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.hero__decor {
+  position: absolute;
+  z-index: 1;
+  top: 83px;
+  left: 36px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background: $circle_color;
+
+  @include tablet {
+    left: 248px;
+    top: 43px;
+    width: 335px;
+    height: 333px;
+  }
+
+  @include desktop {
+    left: 517px;
+    top: 54px;
+    width: 534px;
+    height: 534px;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  top: 9px;
+  left: 81px;
+  width: 171px;
+
+  @include tablet {
+    left: 74px;
+    top: 39px;
+    width: 143px;
+  }
+
+  @include desktop {
+    left: 119px;
+    top: 58px;
+    width: 236px;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero__content--p1 {
+  padding-bottom: 16px;
+
+  @include desktop {
+    padding-bottom: 60px;
+  }
+}
+
+.hero__title {
+  padding-top: 194px;
+  margin-bottom: 20px;
+  max-width: 218px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white;
+
+  @include tablet {
+    padding-top: 102px;
+    max-width: 162px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @include desktop {
+    padding-top: 147px;
+    margin-bottom: 24px;
+    max-width: 277px;
+    font-size: 38px;
+    line-height: 1.14;
+  }
+}
+
+.hero__title--prcolor {
+  font-size: 48px;
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+  color: $title_color;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 0.9;
+  }
+
+  @include desktop {
+    font-size: 58px;
+  }
+}
+
+.hero__menu {
+  display: flex;
+}
+
+.hero__btn {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: $title_color;
+  color: $white;
+  transition: color $time-duration $time-function,
+    background-color $time-duration $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: $title_color;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.hero__btn--light {
+  background-color: $white;
+  color: $title_color;
+  margin-left: 8px;
+
+  @include desktop {
+    margin-left: 12px;
+  }
+}
+
+.hero__link {
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  color: currentColor;
+
+  @include desktop {
+    min-height: 40px;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.bioeco {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.bioeco__img {
+  width: 152px;
+
+  @include desktop {
+    width: 213px;
+  }
+}
+
+.bioeco__text {
+  max-width: 114px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.5;
+  color: $white;
+  margin-bottom: 7px;
+
+  @include desktop {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+.bioeco__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $white;
+  border-color: transparent;
+  color: $title_color;
+  transition: background-color $time-duration $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
+  }
+
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.bioeco__icon {
+  width: 10px;
+  height: 10px;
+  fill: currentColor;
+  @include desktop {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.hero__content--p2 {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  padding-top: 94px;
+  @include desktop {
+    padding-top: 156px;
+  }
+}
+
+.clients {
+  padding-right: 10px;
+  @include desktop {
+    padding-right: 18px;
+  }
+}
+
+.clients__item:not(:last-child) {
+  margin-bottom: 17px;
+  @include desktop {
+    margin-bottom: 18px;
+  }
+}
+
+.clients__number {
+  position: relative;
+  text-align: right;
+  font-family: 'Titan One';
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $title_color;
+
+  @include desktop {
+    font-size: 46px;
+    margin-bottom: 2px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: $white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    top: -2;
+    right: -10;
+
+    @include desktop {
+      width: 30px;
+      height: 30px;
+      top: -3;
+      right: -18;
+    }
+  }
+}
+
+.clients__type {
+  text-align: right;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  color: $white;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.clients_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 190px;
+  @include desktop {
+    min-width: 304px;
+  }
+}

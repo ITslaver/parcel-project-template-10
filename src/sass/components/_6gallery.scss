@@ -1,0 +1,123 @@
+.gallery {
+  background: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include mobile {
+    background: linear-gradient(to bottom, #fff5f6 44%, #fff 44%);
+  }
+  @include tablet {
+    background: linear-gradient(to bottom, #fff5f6 65%, #fff 65%);
+  }
+  @include desktop {
+    background: linear-gradient(to bottom, #fff5f6 38%, #fff 38%);
+  }
+}
+.gallery_items {
+  display: flex;
+
+  justify-content: center;
+  padding-top: 60px;
+  @include tablet {
+    padding-top: 64px;
+  }
+  @include desktop {
+    padding-top: 120px;
+  }
+}
+.gallery__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.gallery__item {
+  &:not(:last-child) {
+    margin-right: 3px;
+    @include tablet {
+      margin-right: 6px;
+    }
+    @include desktop {
+      margin-right: 8px;
+    }
+  }
+}
+.gallery__item:nth-child(-1n + 5) img:not(:last-child) {
+  margin-bottom: 3px;
+  @include tablet {
+    margin-bottom: 6px;
+  }
+  @include desktop {
+    margin-bottom: 8px;
+  }
+}
+.gallery__item:nth-child(1) {
+  margin-top: 45px;
+  @include tablet {
+    margin-top: 108px;
+  }
+  @include desktop {
+    margin-top: 143px;
+  }
+}
+.gallery__item:nth-child(2) {
+  margin-top: 28px;
+  @include tablet {
+    margin-top: 67px;
+  }
+  @include desktop {
+    margin-top: 89px;
+  }
+}
+.gallery__item:nth-child(4) {
+  margin-top: 31px;
+  @include tablet {
+    margin-top: 75px;
+  }
+  @include desktop {
+    margin-top: 99px;
+  }
+}
+.gallery__item:nth-child(5) {
+  margin-top: 21px;
+  @include tablet {
+    margin-top: 50px;
+  }
+  @include desktop {
+    margin-top: 66px;
+  }
+}
+.gallery__item:nth-child(6) {
+  margin-top: 49px;
+  @include tablet {
+    margin-top: 117px;
+  }
+  @include desktop {
+    margin-top: 155px;
+  }
+}
+.gallery__img {
+  width: 44px;
+  @include tablet {
+    width: 105px;
+  }
+  @include desktop {
+    width: 138px;
+  }
+}
+.gallery__img--second {
+  width: 90px;
+  @include tablet {
+    width: 214px;
+  }
+  @include desktop {
+    width: 283px;
+  }
+}

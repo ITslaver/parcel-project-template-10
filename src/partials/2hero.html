@@ -1,0 +1,120 @@
+<section class="hero" id="main">
+  <div class="container">
+    <div class="hero__decor">
+      <picture>
+        <source
+          srcset="
+            ./images/hero-icecream-d.png    1x,
+            ./images/hero-icecream-d@2x.png 2x
+          "
+          media="screen and (min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero-icecream-t.png    1x,
+            ./images/hero-icecream-t@2x.png 2x
+          "
+          media="screen and (min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero-icecream-m.png    1x,
+            ./images/hero-icecream-m@2x.png 2x
+          "
+          media="screen and (min-width: 480px)"
+        />
+        <img
+          src="./images/hero-icecream-m.png"
+          alt="icecream"
+          class="hero__img animate__animated animate__flip"
+          width="171"
+        />
+      </picture>
+    </div>
+    <div class="hero__content">
+      <div class="hero__content--p1">
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title--prcolor">passion</span>
+        </h1>
+        <ul class="hero__menu list">
+          <li class="hero__btn">
+            <a href="#products" class="hero__link link">Products</a>
+          </li>
+          <li class="hero__btn hero__btn--light">
+            <a href="#howsItMade" class="hero__link link">How it’s made?</a>
+          </li>
+        </ul>
+        <div class="bioeco">
+          <picture>
+            <source
+              srcset="
+                ./images/hero-milk-d.png    1x,
+                ./images/hero-milk-d@2x.png 2x
+              "
+              media="screen and (min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/hero-milk-t.png    1x,
+                ./images/hero-milk-t@2x.png 2x
+              "
+              media="screen and (min-width: 768px)"
+            />
+            <img
+              src="./images/hero-milk-t.png"
+              class="bioeco__img"
+              alt="milk"
+              width="213"
+            />
+          </picture>
+          <div class="bioeco__content">
+            <p class="bioeco__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              fuga aut sed natus facere velit.
+            </p>
+            <button class="bioeco__btn">
+              <svg class="bioeco__icon" width="10" height="8">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__content--p2">
+        <ul class="clients list">
+          <li class="clients__item">
+            <p class="clients__number">16</p>
+            <p class="clients__type">cafes</p>
+          </li>
+          <li class="clients__item">
+            <p class="clients__number">23</p>
+            <p class="clients__type">food trucks</p>
+          </li>
+        </ul>
+        <picture>
+          <source
+            srcset="
+              ./images/hero-tasty-d.png    1x,
+              ./images/hero-tasty-d@2x.png 2x
+            "
+            media="screen and (min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-tasty-t.png    1x,
+              ./images/hero-tasty-t@2x.png 2x
+            "
+            media="screen and (min-width: 768px)"
+          />
+          <img
+            src="./images/hero-tasty-t.png"
+            class="clients_img"
+            alt="girl with icecream"
+            width="213"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
