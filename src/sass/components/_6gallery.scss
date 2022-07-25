@@ -1,5 +1,9 @@
 .gallery {
   background: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
+  & .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   @include mobile {
     background: linear-gradient(to bottom, #fff5f6 44%, #fff 44%);
   }
