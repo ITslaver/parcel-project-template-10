@@ -1,20 +1,33 @@
 .hero {
-  min-height: 502px;
+  position: relative;
   overflow: hidden;
   background-color: $pink;
+
+  @media screen and (max-width: 767px) {
+    min-height: 502px;
+  }
+
   .container {
     position: relative;
   }
 }
 
-.hero__circle {
+.hero__decor {
   position: absolute;
+  z-index: 1;
   top: 83px;
   left: 36px;
   width: 346px;
   height: 344px;
   border-radius: 50%;
   background: $circle_color;
+
+  @include tablet {
+    left: 248px;
+    top: 43px;
+    width: 335px;
+    height: 333px;
+  }
 }
 
 .hero__img {
@@ -22,11 +35,28 @@
   top: 9px;
   left: 81px;
   width: 171px;
+
+  @include tablet {
+    left: 74px;
+    top: 37px;
+    width: 143px;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero__content--p1 {
+  padding-bottom: 16px;
 }
 
 .hero__title {
-  position: relative;
-  z-index: 2;
   padding-top: 194px;
   margin-bottom: 20px;
   max-width: 218px;
@@ -37,6 +67,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $white;
+
+  @include tablet {
+    padding-top: 102px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
 }
 
 .hero__title--prcolor {
@@ -44,22 +80,21 @@
   line-height: 0.96;
   letter-spacing: 0.04em;
   color: $title_color;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 0.9;
+  }
 }
 
 .hero__menu {
-  position: relative;
-  z-index: 2;
   display: flex;
 }
 
 .hero__btn {
-  background: $title_color;
+  margin-bottom: 20px;
   border-radius: 20px;
-  min-height: 24px;
-  display: flex;
-  align-items: center;
-  padding-left: 14px;
-  padding-right: 14px;
+  background: $title_color;
   color: $white;
   transition: color $time-duration $time-function,
     background-color $time-duration $time-function;
@@ -78,8 +113,107 @@
 }
 
 .hero__link {
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 14px;
   font-family: 'DM Sans';
   font-size: 8px;
   line-height: 1.25;
   color: currentColor;
+}
+
+.bioeco {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.bioeco__img {
+  width: 152px;
+}
+
+.bioeco__text {
+  max-width: 114px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.5;
+  color: $white;
+  margin-bottom: 7px;
+}
+
+.bioeco__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $white;
+  border-color: transparent;
+  color: $title_color;
+}
+
+.bioeco__icon {
+  width: 10px;
+  height: 8px;
+  fill: currentColor;
+}
+
+.hero__content--p2 {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  padding-top: 94px;
+}
+
+.clients {
+  padding-right: 10px;
+}
+
+.clients__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.clients__number {
+  position: relative;
+  text-align: right;
+  font-family: 'Titan One';
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $title_color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: $white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    top: -2;
+    right: -10;
+  }
+}
+
+.clients__type {
+  text-align: right;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.25;
+  color: $white;
+}
+
+.clients_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 190px;
 }
