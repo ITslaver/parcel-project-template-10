@@ -6,14 +6,14 @@
         padding-right: 16px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         padding-top: 121px;
     }
 }
 
 
 .footer-content {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
             display: flex;
             justify-content: space-between;
     
@@ -23,7 +23,7 @@
 .title {
     margin-bottom: 40px;
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
     }
 }
@@ -39,14 +39,14 @@
     color: $label_color;
     max-width: 232px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 12px;
         font-size: 26px;
         line-height: 1.1;
         max-width: 340px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 16px;
         font-size: 30px;
         line-height: 1.13;
@@ -66,13 +66,13 @@
     color: $title_color;
     max-width: 200px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         font-size: 48px;
         line-height: 1.14;
         max-width: 340px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 58px;
         line-height: 1.13;
         max-width: 474px;
@@ -82,11 +82,11 @@
 
 .socials {    
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 60px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 11px;
     }
 }
@@ -103,7 +103,7 @@
         height: 32px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         height: 34px;    
     }
    
@@ -147,12 +147,12 @@
         height: 19px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 20px;
         height: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 20px;
         height: 20px;
     }
@@ -164,11 +164,11 @@
         height: 15px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 20px;
         height: 16px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 20px;
         height: 16px;
     }
@@ -180,12 +180,12 @@
         height: 19px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 9px;
         height: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 9px;
         height: 20px;
     }
@@ -208,6 +208,9 @@
     &:hover {
         color: $title_color;
     }
+    &:focus {
+        color: $title_color;
+    }
 }
 
 .footer-copy {
@@ -225,18 +228,18 @@
     padding-bottom: 3px;
     border-top: 1px solid $gray;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $mobile) {
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 8px;
         padding-bottom: 8px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         padding-top: 7px;
         padding-bottom: 4px;
     }
