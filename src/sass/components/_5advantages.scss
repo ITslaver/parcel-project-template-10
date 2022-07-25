@@ -1,10 +1,10 @@
-.advanteges {
+.section {
     background-color: $back_color;
 }
 
 .advanteges__list {
     @include mobile {
-        
+        // margin-bottom: 50px;
     }
     @include tablet {
         
@@ -16,22 +16,34 @@
 }
 
 .advanteges__item {
+    @include mobile {
+        margin-bottom: 32px;
+    }
+    @include tablet {
+        
+    }
+    @include desktop {
+    
+    }
+}
+
+.advanteges-text__wrap {
     @media  screen and (min-width: 320px) {
         width: 230px;
-    height: 96px; 
+        height: 36px; 
         }
     @include mobile {
     width: 230px;
-    height: 96px;
+    height: 36px;
     }
     @include tablet {
-    width: 160px;
-    height: 130px;
+    width: 162px;
+    height: 67px;
     margin-right: 22px;
     }
     @include desktop {
     width: 288px;
-    height: 133px;
+    height: 52px;
     margin-right: 80px;
     }
 }
@@ -44,6 +56,7 @@
     text-transform: uppercase;
     color: $title_color;
     margin-bottom: 13px;
+
 }
 
 .text-after__title {
