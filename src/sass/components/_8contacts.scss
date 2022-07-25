@@ -1,0 +1,318 @@
+.section-contacts{
+    background-image: linear-gradient(to bottom,
+                $white 5%,
+                #FFF5F6 55%,
+                #FFF5F6 100%,
+);
+    background-color: #FFF5F6;
+    font-family: "DM Sans", sans-serif;
+    padding-top: 60px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 80px;
+        background-image: linear-gradient(to bottom,
+                    $white 53%,
+                    #FFF5F6 53%,
+                    #FFF5F6 100%,
+                );
+        }
+    @media screen and (min-width: $desktop) {
+        padding-top: 120px;
+        background-image: linear-gradient(to bottom,
+                $white 28.5%,
+                #FFF5F6 28.5%,
+                #FFF5F6 100%,
+                );
+    }
+}
+
+.container{
+    @media screen and (min-width: $tablet){
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.visually-hidden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+.our-representations{
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet){
+        margin-bottom: 60px;
+    }
+}
+
+.representations__list {
+    margin: -20px;
+    @media screen and (min-width: $tablet){
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.representations__item{
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    background: $white;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    @media screen and (min-width: $tablet){
+        width: calc((100% - 96px) / 3);
+    }
+    @media screen and (min-width: $desktop){
+        padding: 40px;
+    }
+}
+
+
+.representation__section{
+    &:not(:first-child){
+        padding-top: 24px;
+    }
+    &:not(:last-child){
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+        @media screen and (min-width: $tablet){
+            &:not(:first-child) {
+                padding-top: 32px;
+                }
+            
+            &:not(:last-child) {
+                padding-bottom: 32px;
+                }
+        }
+}
+
+.representation__type{
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $white;
+    border-radius: 4px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $tablet){
+        height: 28px;
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+}
+
+.representation__type-cafe{
+    background-color: $yellow;
+    width: 80px;
+    @media screen and (min-width: $tablet){
+        width: 73px;
+    }
+}
+
+.representation__type-foodtruck{
+    background-color: #C2E297;
+    width: 130px;
+    @media screen and (min-width: $tablet){
+        width: 138px;
+    }
+}
+
+.representation__city {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+
+    @media screen and (min-width: $tablet){
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: $desktop){
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+}
+
+.representation__description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $brown;
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.66;
+        }
+    @media screen and (min-width: $desktop){
+        font-size: 16px;
+        line-height: 1.83;
+    }
+}
+
+.representation__working-days {
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        }
+}
+
+.representation__working-hours {
+    font-size: 12px;
+    line-height: 1.86;
+    color: #FFA5BA;
+    &:not(:last-child){
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: $tablet){
+        font-size: 14px;
+        &:not(:last-child) {
+            margin-bottom: 12px;
+            }
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+    }
+}
+
+.representation__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.representation__contact-link {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $brown;
+    transition-property: color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $time-function;
+    &:hover,
+    &:focus{
+        color: #D41443;
+    }
+    @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            line-height: 1.83;
+        }
+    @media screen and (min-width: $desktop) {
+            font-size: 16px;
+        }
+}
+
+.contacts-maps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: $tablet){
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: center;
+    }
+}
+
+.button-contacts{
+    padding: 0;
+    height: 44px;
+    width: auto;
+    max-width: 162px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $tablet){
+        max-width: 198px;
+    }
+}
+
+.button-locations{
+    color: $white;
+    background-color: #D41342;
+    margin-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    transition-property: stroke, color, background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $time-function;
+    
+    &:hover,
+    &:focus {
+        color: #D41443;
+        background-color: #ECEBEB;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+        margin-right: 15.5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    @media screen and (min-width: $desktop) {
+        padding-left: 35px;
+        padding-right: 35px;
+        }
+}
+
+.button-locations__icon{
+    stroke: currentColor;
+    margin-left: 8px;
+    @media screen and (min-width: $tablet){
+        margin-left: 12px;
+    }
+    @media screen and (min-width: $desktop){
+        margin-left: 13px;
+    }
+}
+
+.button-franchise{
+    color:#D41443;
+    background-color: $white;
+    padding-left: 32px;
+    padding-right: 32px;
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $time-function;
+    &:hover,
+    &:focus{
+        background-color: #ECEBEB;
+    }
+    @media screen and (min-width: $tablet){
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+    @media screen and (min-width: $desktop){
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+.button-franchise-icon{
+    stroke: #D41443;
+    margin-left: 12px;
+}
