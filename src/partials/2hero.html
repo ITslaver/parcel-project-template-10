@@ -45,18 +45,77 @@
             <a href="#howsItMade" class="hero__link link">How it’s made?</a>
           </li>
         </ul>
+        <div class="bioeco">
+          <picture>
+            <source
+              srcset="
+                ./images/hero-milk-d.png    1x,
+                ./images/hero-milk-d@2x.png 2x
+              "
+              media="screen and (min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/hero-milk-t.png    1x,
+                ./images/hero-milk-t@2x.png 2x
+              "
+              media="screen and (min-width: 768px)"
+            />
+            <img
+              src="./images/hero-milk-t.png"
+              class="bioeco__img"
+              alt="milk"
+              width="213"
+            />
+          </picture>
+          <div class="bioeco__content">
+            <p class="bioeco__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              est veniam quasi cumque dolores aliquid beatae hic! Quod, vel
+              perspiciatis.
+            </p>
+            <button class="bioeco__btn">
+              <svg class="bioeco__icon" width="10" height="8">
+                <use href="./images/icons.svg#arow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-      <picture>
-        <source
-          srcset="./images/hero-milk-d.png 1x, ./images/hero-milk-d@2x.png 2x"
-          media="screen and (min-width: 1200px)"
-        />
-        <source
-          srcset="./images/hero-milk-t.png 1x, ./images/hero-milk-t@2x.png 2x"
-          media="screen and (min-width: 768px)"
-        />
-        <img src="./images/hero-milk-t.png" alt="milk" width="152" />
-      </picture>
+      <div class="hero__content--p2">
+        <ul class="clients list">
+          <li class="clients__item">
+            <p class="clients__number">16</p>
+            <p class="clients__type">cafes</p>
+          </li>
+          <li class="clients__item">
+            <p class="clients__number">23</p>
+            <p class="clients__type">food trucks</p>
+          </li>
+        </ul>
+        <picture>
+          <source
+            srcset="
+              ./images/hero-tasty-d.png    1x,
+              ./images/hero-tasty-d@2x.png 2x
+            "
+            media="screen and (min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-tasty-t.png    1x,
+              ./images/hero-tasty-t@2x.png 2x
+            "
+            media="screen and (min-width: 768px)"
+          />
+          <img
+            src="./images/hero-tasty-t.png"
+            class="clients_img"
+            alt="girl with icecream"
+            width="213"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
