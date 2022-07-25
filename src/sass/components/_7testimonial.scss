@@ -102,7 +102,7 @@ background-color: #fafafa;
     content: '. . .';
       color: #d41443;
       font-size: 28px;
-      line-height: 0.8575em;
+      line-height: 1.286em;
       display: block;
     
     @media screen and (min-width: $tablet) {
@@ -122,7 +122,7 @@ background-color: #fafafa;
     font-weight: 500;
     line-height: 1.86em;
     display: flex;
-    height: 65px;
+    height: 61px;
     flex-direction: column;
     justify-content: space-between;
 @media screen and (min-width: $tablet) {
@@ -134,7 +134,7 @@ background-color: #fafafa;
     @media screen and (min-width: $desktop) {
 font-size: 20px;
     line-height: 1.86em;
-    height: 75px;
+    height: 67px;
     }
 }
 
