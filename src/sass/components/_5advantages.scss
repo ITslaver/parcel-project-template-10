@@ -1,20 +1,5 @@
-.advanteges .container {
+.section {
     background-color: $back_color;
-    @media  screen and (min-width: 320px) {
-        padding-top: 30px; 
-        }
-
-    @include mobile {
-        padding-top: 40px; 
-        }
-    
-        @include tablet {
-        padding-top:83px;  
-        }
-    
-        @include desktop {
-        padding-top: 120px; 
-        }
 }
 
 .advanteges__list {
@@ -41,6 +26,18 @@
     }
     @include desktop {
     
+    }
+}
+
+.advanteges-icon {
+    @include mobile {
+    margin-bottom: 16px;
+    }
+    @include tablet {
+    margin-bottom: 36px;
+    }
+    @include desktop {
+        margin-bottom: 40px;
     }
 }
 
@@ -73,6 +70,7 @@
     text-transform: uppercase;
     color: $title_color;
     margin-bottom: 13px;
+    margin-top: 0;
 
 }
 
