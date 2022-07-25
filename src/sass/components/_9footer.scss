@@ -139,7 +139,7 @@
 }
 
 .socials-list__icon1 {
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 767px) {
         width: 19px;
         height: 19px;
     }
@@ -156,7 +156,7 @@
 }
 
 .socials-list__icon2  {
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 767px) {
         width: 19px;
         height: 15px;
     }
@@ -172,7 +172,7 @@
 }
 
 .socials-list__icon3 {
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 767px) {
         width: 9px;
         height: 19px;
     }
