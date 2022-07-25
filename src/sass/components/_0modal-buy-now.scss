@@ -44,20 +44,20 @@
     border-radius: 22px;
 
     @media screen and (max-height: 610px) and (orientation: landscape) {
-        top: 70%;
+        top: 60%;
     }
 
     @media screen and (max-height: 450px) and (orientation: landscape) {
-        top: 85%;
+        top: 80%;
     }
 
     @media screen and (max-height: 360px) and (orientation: landscape) {
         top: 100%;
     }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 528px;
-        height: 581px;
+    @include desktop {
+        max-width: 520px;
+        height: auto;
     }
 }
 
