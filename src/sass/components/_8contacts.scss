@@ -25,6 +25,13 @@
     }
 }
 
+.container{
+    @media screen and (min-width: $tablet){
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 .visually-hidden{
         position: absolute;
         width: 1px;
@@ -49,7 +56,7 @@
     margin: -20px;
     @media screen and (min-width: $tablet){
         display: flex;
-        margin: -16px;
+        gap: 32px;
     }
 }
 
@@ -65,7 +72,6 @@
     border-radius: 24px;
     @media screen and (min-width: $tablet){
         width: calc((100% - 96px) / 3);
-        margin: 16px;
     }
     @media screen and (min-width: $desktop){
         padding: 40px;
@@ -227,6 +233,7 @@
 }
 
 .button-contacts{
+    padding: 0;
     height: 44px;
     width: auto;
     max-width: 162px;
@@ -251,6 +258,15 @@
     margin-bottom: 10px;
     padding-left: 17px;
     padding-right: 17px;
+    transition-property: stroke, color, background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $time-function;
+    
+    &:hover,
+    &:focus {
+        color: #D41443;
+        background-color: #ECEBEB;
+    }
     @media screen and (min-width: $tablet) {
         margin-bottom: 0;
         margin-right: 15.5px;
@@ -264,7 +280,7 @@
 }
 
 .button-locations__icon{
-    fill: $white;
+    stroke: currentColor;
     margin-left: 8px;
     @media screen and (min-width: $tablet){
         margin-left: 12px;
@@ -297,6 +313,6 @@
 }
 
 .button-franchise-icon{
-    fill: #D41443;
+    stroke: #D41443;
     margin-left: 12px;
 }
