@@ -1,6 +1,6 @@
-<section class="hero">
+<section class="hero" id="main">
   <div class="container">
-    <div class="hero__circle">
+    <div class="hero__decor">
       <picture>
         <source
           srcset="
@@ -31,17 +31,32 @@
         />
       </picture>
     </div>
-    <h1 class="hero__title">
-      ice cream made with
-      <span class="hero__title--prcolor">passion</span>
-    </h1>
-    <ul class="hero__menu list">
-      <li class="hero__btn">
-        <a href="#products" class="hero__link link">Products</a>
-      </li>
-      <li class="hero__btn hero__btn--light">
-        <a href="#how_its_made" class="hero__link link">How it’s made?</a>
-      </li>
-    </ul>
+    <div class="hero__content">
+      <div class="hero__content--p1">
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title--prcolor">passion</span>
+        </h1>
+        <ul class="hero__menu list">
+          <li class="hero__btn">
+            <a href="#products" class="hero__link link">Products</a>
+          </li>
+          <li class="hero__btn hero__btn--light">
+            <a href="#howsItMade" class="hero__link link">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <picture>
+        <source
+          srcset="./images/hero-milk-d.png 1x, ./images/hero-milk-d@2x.png 2x"
+          media="screen and (min-width: 1200px)"
+        />
+        <source
+          srcset="./images/hero-milk-t.png 1x, ./images/hero-milk-t@2x.png 2x"
+          media="screen and (min-width: 768px)"
+        />
+        <img src="./images/hero-milk-t.png" alt="milk" width="152" />
+      </picture>
+    </div>
   </div>
 </section>
