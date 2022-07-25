@@ -239,7 +239,7 @@
     }
 }
 
-.policy {
+.modal__policy {
     position: relative;
 
     display: flex;
@@ -249,7 +249,7 @@
     margin-bottom: 30px;
 }
 
-.policy__check {
+.modal__check {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -262,7 +262,7 @@
     overflow: hidden;
 }
 
-.policy__agreement {
+.modal__agreement {
     position: relative;
 
     font-family: $main-font;
@@ -285,7 +285,7 @@
     }
 }
 
-.policy__checkbox--empty {
+.modal__checkbox--empty {
     position: absolute;
     top: 0;
     left: -24px;
@@ -297,7 +297,7 @@
         opacity 250ms $time-function,
         visibility 250ms $time-function;
 
-    .policy__agreement:hover & {
+    .modal__agreement:hover & {
         fill: $title_color;
     }
 
@@ -306,7 +306,7 @@
         outline: transparent;
     }
 
-    .policy__check:checked~.policy__agreement>& {
+    .modal__check:checked~.modal__agreement>& {
         opacity: 0;
         visibility: hidden;
     }
@@ -316,7 +316,7 @@
     }
 }
 
-.policy__checkbox--filled {
+.modal__checkbox--filled {
     position: absolute;
     top: 0;
     left: -24px;
@@ -330,7 +330,7 @@
     transition: opacity 250ms $time-function,
         visibility 250ms $time-function;
 
-    .policy__check:checked~.policy__agreement>& {
+    .modal__check:checked~.modal__agreement>& {
         visibility: visible;
         opacity: 1;
     }
@@ -340,7 +340,7 @@
     }
 }
 
-.policy__link {
+.modal__link {
     color: $title_color;
     text-decoration-line: underline;
 
