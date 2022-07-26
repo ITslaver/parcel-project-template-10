@@ -72,6 +72,10 @@
   margin-bottom: 140px;
 }
 .product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   border-radius: 50%;
   width: 40px;
   height: 40px;
