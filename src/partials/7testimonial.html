@@ -2,20 +2,60 @@
     <h2 class="testimonials__title">Testimonials</h2>
     <div class="testimonials__slider">
 <div class="testimonials__slide">
-    <img class="testimonials__avatars" srcset="./images/testimonials1-min.png x1, ./images/testimonials1@2x-min.png 2x"
-    src="./images/testimonials1-min.png" alt="Emily avatar" width="85" height="85">
+    <picture>
+        <source srcset="
+                ./images/testimonials1-min.png    1x,
+                ./images/testimonials1@2x-min.png 2x
+              " media="screen and (min-width: 1200px)" />
+        <source srcset="
+                ./images/testimonials1-min.png    1x,
+                ./images/testimonials1@2x-min.png 2x
+              " media="screen and (min-width: 768px)" />
+        <source srcset="
+                ./images/testimonials1-min.png    1x,
+                ./images/testimonials1@2x-min.png 2x
+              " media="screen and (min-width: 480px)" />
+        <img src="./images/testimonials1-min.png" alt="Emily avatar" class="testimonials__avatars"
+            width="85" height="85"/>
+    </picture>
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p> </div>
     <h3 class="testimonials__author">Emily, Los Angeles</h3>
 </div>
 <div class="testimonials__slide">
-    <img class="testimonials__avatars" srcset="./images/testimonials2-min.png x1, ./images/testimonials2@2x-min.png 2x"
-    src="./images/testimonials2-min.png" alt="Alexa avatar" width="85" height="85">
+        <picture>
+            <source srcset="
+                        ./images/testimonials2-min.png    1x,
+                        ./images/testimonials2@2x-min.png 2x
+                      " media="screen and (min-width: 1200px)" />
+            <source srcset="
+                        ./images/testimonials2-min.png    1x,
+                        ./images/testimonials2@2x-min.png 2x
+                      " media="screen and (min-width: 768px)" />
+            <source srcset="
+                        ./images/testimonials2-min.png    1x,
+                        ./images/testimonials2@2x-min.png 2x
+                      " media="screen and (min-width: 480px)" />
+            <img src="./images/testimonials1-min.png" alt="Alexa avatar" class="testimonials__avatars" width="85" height="85" />
+        </picture>
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.</p></div>
     <h3 class="testimonials__author">Alexa, Las Vegas</h3>
 </div>
 <div class="testimonials__slide">
-    <img class="testimonials__avatars" srcset="./images/testimonials3-min.png x1, ./images/testimonials3@2x-min.png 2x"
-    src="./images/testimonials3-min.png" alt="Jain avatar" width="85" height="85">
+    <picture>
+        <source srcset="
+                            ./images/testimonials3-min.png    1x,
+                            ./images/testimonials3@2x-min.png 2x
+                          " media="screen and (min-width: 1200px)" />
+        <source srcset="
+                            ./images/testimonials3-min.png    1x,
+                            ./images/testimonials3@2x-min.png 2x
+                          " media="screen and (min-width: 768px)" />
+        <source srcset="
+                            ./images/testimonials3-min.png    1x,
+                            ./images/testimonials3@2x-min.png 2x
+                          " media="screen and (min-width: 480px)" />
+        <img src="./images/testimonials1-min.png" alt="Jain avatar" class="testimonials__avatars" width="85" height="85" />
+    </picture>
     <div class="testimonials__quote"><p class="testimonials__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus.</p></div>
     <h3 class="testimonials__author">Jain, Chichago</h3>
 </div>
