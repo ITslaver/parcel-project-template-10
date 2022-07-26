@@ -2,6 +2,7 @@ body {
     position: relative;
     font-family: $main-font;
     font-family: $secondary-font;
+    overflow-x: hidden;
 
     &.no-scroll {
             overflow: hidden
