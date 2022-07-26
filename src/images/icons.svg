@@ -69,5 +69,8 @@
       <path d="M4.267 0h25.6a4.267 4.267 0 0 1 4.267 4.267v23.467a4.267 4.267 0 0 1-4.267 4.267h-25.6A4.267 4.267 0 0 1 0 27.734V4.267A4.267 4.267 0 0 1 4.267 0z"/>
       <path fill="#fff" stroke="#fff" stroke-width=".427" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)" d="m8.442 16.537-.147-.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"/>
     </symbol>
+    <symbol id="icon-him" viewBox="0 0 26 32">
+    <path fill="none" stroke="#D41443" style="stroke: var(--color1, #D41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+    </symbol>
   </defs>
 </svg>
