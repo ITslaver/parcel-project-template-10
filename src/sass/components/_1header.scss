@@ -142,9 +142,13 @@
             visibility 500ms $time-function;
 
         @media screen and (min-width: $mobile) and (orientation: landscape) {
-            max-width: 254px;
+            width: 254px;
             right: 0;
             left: auto;
+        }
+
+        @include tablet {
+            width: 254px;
         }
     }
 }
