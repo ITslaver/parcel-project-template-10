@@ -96,6 +96,8 @@
     font-size: 16px;
     line-height: 1.31;
 
+    cursor: pointer;
+
     transition: background-color $time-duration $time-function;
 
     &:hover,
@@ -215,6 +217,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+
+    cursor: pointer;
 
     transition: background-color $time-duration $time-function;
 
