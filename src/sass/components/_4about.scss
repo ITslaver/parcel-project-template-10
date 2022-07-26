@@ -9,7 +9,7 @@
       background-image: url(../images/about_bg_mobile_2x.png);
     }
 
-    background-position: right 0 bottom 160px;
+    background-position: right 0 bottom 140px;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -21,8 +21,7 @@
       background-image: url(../images/about_bg_desctop_2x.png);
     }
 
-    background-position-y: 108%;
-    background-size: contain;
+    background-position: 50% 178%;
     background-repeat: no-repeat;
   }
 }
@@ -36,7 +35,7 @@
   font-size: 18px;
   line-height: 1.17;
 
-  color: $label_color;
+  color: $circle_color;
 
   @include tablet {
     margin-bottom: 16px;
@@ -98,6 +97,7 @@
 
   @include tablet {
     margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   @include desktop {
@@ -105,8 +105,11 @@
   }
 }
 .about__box {
+  padding-right: 60px;
+
   @include tablet {
-    max-width: 334px;
+    padding-right: 0;
+    // max-width: 334px;
   }
 
   @include desktop {
@@ -115,14 +118,12 @@
 }
 
 .about__text {
-  padding-right: 60px;
   font-family: $main-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
 
   @include tablet {
-    padding-right: 0;
     font-size: 14px;
     line-height: 1.76;
   }
@@ -171,7 +172,7 @@
 .about__btn {
   min-width: 176px;
   padding: 13px;
-
+cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
