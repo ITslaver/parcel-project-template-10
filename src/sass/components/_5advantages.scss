@@ -36,14 +36,14 @@
 .advanteges__item {
         @include mobile {
         &:not(:last-child) {
-        margin-bottom: 32px;}
+        margin-bottom: 40px;}
         }
-    @include tablet {
-        
-    }
-    @include desktop {
-    
-    }
+        @include tablet {
+        margin-bottom: 0px;
+        }
+        @include desktop {
+        margin-bottom: 0px;
+        }
 }
 
 .advanteges-icon {
@@ -77,6 +77,7 @@
     height: 52px;
     margin-right: 80px;
     }
+    
 }
 
 .advanteges__title {
