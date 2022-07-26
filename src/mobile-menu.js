@@ -11,15 +11,8 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-open');
-    refs.bodyNoScroll.classList.toggle('no-scroll');
-
     refs.modal.classList.toggle("is-open");
     refs.bodyNoScroll.classList.toggle("no-scroll");
     refs.containerGoWide.classList.toggle("go-wide");
-
   }
 })();
-
-
-
