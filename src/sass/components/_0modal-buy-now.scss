@@ -8,8 +8,8 @@
     visibility: visible;
     opacity: 1;
 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     background: rgba(225, 121, 146, 0.7);
 
@@ -31,8 +31,8 @@
 .modal {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 40px;
+    transform: translateX(-50%);
 
     max-width: 450px;
     width: 100%;
@@ -44,20 +44,17 @@
     border-radius: 22px;
 
     @media screen and (max-height: 610px) and (orientation: landscape) {
-        top: 60%;
+        top: 20px;
     }
 
-    @media screen and (max-height: 450px) and (orientation: landscape) {
-        top: 80%;
+    @include tablet {
+        top: 80px;
     }
-
-    @media screen and (max-height: 360px) and (orientation: landscape) {
-        top: 100%;
-    }
-
+    
     @include desktop {
+        top: 50%;
+        transform: translate(-50%, -50%);
         max-width: 520px;
-        height: auto;
     }
 }
 
@@ -103,9 +100,14 @@
 
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 1.18;
+    font-size: 22px;
+    line-height: 1.13;
     text-align: center;
+
+    @include desktop {
+        font-size: 27px;
+        line-height: 1.18;
+    }
 }
 
 .modal__form {
@@ -205,7 +207,7 @@
 .modal__list-input {
     @extend .modal__input;
 
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
 
@@ -215,7 +217,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
-    }
+        }
 }
 
 .modal__submit {
