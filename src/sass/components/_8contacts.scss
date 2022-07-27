@@ -57,6 +57,10 @@
     @media screen and (min-width: $tablet){
         display: flex;
         gap: 32px;
+        margin: 0;
+    }
+    @media screen and (min-width: $desktop){
+        margin: 0;
     }
 }
 
