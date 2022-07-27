@@ -156,9 +156,6 @@ font-size: 20px;
   content: '';
   border-radius: 50%;
   background-color: #d9d9d9;
-  transition-property: background-color;
-  transition-timing-function: $time-function;
-  transition-duration: 250ms;
 }
 
 .slick-dots li button:hover::before,
