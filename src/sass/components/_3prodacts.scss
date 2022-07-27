@@ -60,13 +60,13 @@
   display: block;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 60px;
   @include tablet {
     display: flex;
   }
   @include desktop {
     gap: 32px;
   }
+  padding-bottom: 60px;
 }
 .product-list__item.list {
   @include tablet {
