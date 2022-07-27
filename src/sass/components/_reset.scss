@@ -3,6 +3,7 @@
     font-family: $main-font;
     font-family: $secondary-font;
     overflow-x: hidden;
+    touch-action: pan-y pinch-zoom;
 
     &.no-scroll {
             overflow: hidden;
