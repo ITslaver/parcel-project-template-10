@@ -58,15 +58,19 @@
 }
 .product-list {
   display: block;
+  margin: 0px;
+  padding: 0px;
   @include tablet {
     display: flex;
-    gap: 16px;
   }
   @include desktop {
     gap: 32px;
   }
-  margin: 0px;
-  padding: 0px;
+}
+.product-list__item.list {
+  @include tablet {
+    width: calc((100% - 32px) / 2);
+  }
 }
 .product-list__item.list:not(:last-child) {
   margin-bottom: 140px;
@@ -97,6 +101,7 @@
   position: relative;
   width: 280px;
   padding: 160px 40px 40px 40px;
+  margin: 0 auto;
   @include tablet {
     width: 224px;
     padding: 118px 32px 32px 40px;
