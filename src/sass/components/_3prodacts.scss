@@ -60,6 +60,7 @@
   display: block;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 60px;
   @include tablet {
     display: flex;
   }
@@ -74,6 +75,9 @@
 }
 .product-list__item.list:not(:last-child) {
   margin-bottom: 140px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 .product-button {
   display: flex;
