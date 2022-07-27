@@ -58,9 +58,9 @@
 }
 .product-list {
   display: block;
-  padding-bottom: 60px;
   margin: 0px;
   padding: 0px;
+  padding-bottom: 60px;
   @include tablet {
     display: flex;
   }
