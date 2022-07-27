@@ -1,15 +1,18 @@
-body {
+.body {
     position: relative;
     font-family: $main-font;
     font-family: $secondary-font;
     overflow-x: hidden;
+    touch-action: pan-y pinch-zoom;
 
     &.no-scroll {
-            overflow: hidden
+            overflow: hidden;
+            touch-action: none;
         }
     
     &.modal-open {
         overflow: hidden;
+        touch-action: none;
     }
 }
 
