@@ -13,19 +13,22 @@
 
 
 .footer-content {
+    margin-bottom: 40px;
+
     @media screen and (min-width: $tablet) {
             display: flex;
-            justify-content: space-between;
-    
+            justify-content: space-between;    
         }
-}
 
-.title {
-    margin-bottom: 40px;
-    
     @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
     }
+}
+
+.title {        
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;}
 }
 
 .title__prymary {
@@ -36,7 +39,7 @@
     font-size: 18px;
     line-height: 1.16;
     text-transform: uppercase;
-    color: $label_color;
+    color: $circle_color;
     max-width: 232px;
 
     @media screen and (min-width: $tablet) {
@@ -86,7 +89,7 @@
         padding-top: 60px;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
         padding-top: 11px;
     }
 }
@@ -122,13 +125,11 @@
 .socials-list__link {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
     width: 100%;
     height: 100%;
-    background-color: $bg-icon_color;
     border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    background-color: $bg-icon_color;
 
     transition: background-color $time-duration $time-function;
 }
@@ -197,12 +198,21 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.83;
+    line-height: 1.86;
     color: $color-contakts;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;        
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;        
+        letter-spacing: 0.02em;
+    }
 }
 
-.contcts__tel {
-    color: $color-contakts;
+.contacts__tel {
+    color: $title_color;
     transition: color $time-duration $time-function;
 
     &:hover {
@@ -220,7 +230,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 52;
+    line-height: 1.52;
     text-align: center;
     color: $brown;
 
