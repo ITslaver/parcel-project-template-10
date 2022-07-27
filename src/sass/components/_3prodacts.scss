@@ -70,7 +70,7 @@
 }
 .product-list__item.list {
   @include tablet {
-    width: calc((100% - 32px) / 2);
+    width: calc((100% - 32px) / 3);
   }
 }
 .product-list__item.list:not(:last-child) {
