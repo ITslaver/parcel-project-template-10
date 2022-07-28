@@ -1,4 +1,4 @@
-$('.header__nav-link').click(function(e){
+$('.scroll').click(function(e){
   var anch = this.hash.slice(0);
   if(!anch || !anch[0] === "#") return;
   e.preventDefault();
