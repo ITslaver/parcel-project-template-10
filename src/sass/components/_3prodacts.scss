@@ -62,6 +62,7 @@
   padding: 0px;
   @include tablet {
     display: flex;
+    gap: 16px;
   }
   @include desktop {
     gap: 32px;
@@ -107,11 +108,11 @@
   padding: 160px 40px 40px 40px;
   margin: 0 auto;
   @include tablet {
-    width: 224px;
+    //  width: 224px;
     padding: 118px 32px 32px 40px;
   }
   @include desktop {
-    width: 368px;
+    //  width: 368px;
     padding: 165px 63px 60px 64px;
   }
   background-color: #ffb8ca;
