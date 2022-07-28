@@ -58,7 +58,6 @@
 }
 .product-list {
   display: block;
-  padding-bottom: 60px;
   margin: 0px;
   padding: 0px;
   @include tablet {
@@ -67,6 +66,7 @@
   @include desktop {
     gap: 32px;
   }
+  padding-bottom: 60px;
 }
 .product-list__item.list {
   @include tablet {
